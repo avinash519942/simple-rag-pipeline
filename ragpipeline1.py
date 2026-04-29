@@ -3,6 +3,11 @@ import numpy as np
 import faiss
 from openai import OpenAI
 
+
+
+# this is a comment 
+
+
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 # ----------------------------

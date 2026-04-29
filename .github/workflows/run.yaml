@@ -25,3 +25,6 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python app.py
+
+      - name: Check env
+        run: python -c "import os; print('KEY EXISTS:', bool(os.getenv('OPENAI_API_KEY')))"
